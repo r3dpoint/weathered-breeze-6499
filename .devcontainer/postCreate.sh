@@ -3,8 +3,8 @@
 nvm ls
 
 # set a well known password for jetbrains ssh
-# new_passwd="password"
-# echo -e "${new_passwd}\n${new_passwd}" | sudo passwd "$(whoami)"
+new_passwd="password"
+echo -e "${new_passwd}\n${new_passwd}" | sudo passwd "$(whoami)"
 
 # nvm alias default lts/iron
 

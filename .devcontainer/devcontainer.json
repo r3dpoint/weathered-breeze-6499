@@ -11,9 +11,9 @@
     "features": {
       // https://github.com/devcontainers/features/tree/main/src/sshd
       // https://github.com/microsoft/vscode-dev-containers/blob/main/script-library/docs/sshd.md
-    //   "ghcr.io/devcontainers/features/sshd:1": {
-    //     "version": "latest"
-    //   },
+      "ghcr.io/devcontainers/features/sshd:1": {
+        "version": "latest"
+      },
       "ghcr.io/devcontainers/features/common-utils:2": {
         "configureZshAsDefaultShell": true,
         "installOhMyZsh": true,
@@ -101,5 +101,5 @@
     },
     // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
     // "remoteUser": "root"
-    "postCreateCommand": "/usr/bin/bash -i .devcontainer/postCreate.sh"
+    "postCreateCommand": ".devcontainer/postCreate.sh"
   }
