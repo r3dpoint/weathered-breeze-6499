@@ -47,7 +47,7 @@
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // Port 2222 needed for SSHD
     // Port 5432 for Postgres
-    // "forwardPorts": [2222],
+    "forwardPorts": [2222],
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "uname -a",
     // Configure tool-specific properties.
@@ -101,5 +101,5 @@
     },
     // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
     // "remoteUser": "root"
-    "postCreateCommand": ".devcontainer/postCreate.sh"
+    "postCreateCommand": "/usr/bin/bash -i .devcontainer/postCreate.sh"
   }
